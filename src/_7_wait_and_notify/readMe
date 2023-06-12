@@ -1,0 +1,5 @@
+wait and notify works only inside synchronized block
+suppose we are using same intrinsic lock i.e this then we know until and unless one thread releases the lock then other thread will
+not be able to get the lock
+so we use wait() to release the lock
+and wait until other releases the lock by invoking notify()
